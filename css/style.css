@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+
+    margin: 20px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #00d2d3;
+    display: block;
+    flex-wrap: wrap;
+    border: 5px solid #222f3e;
+    border-radius: 20px;
+}
+
+header div h1{
+
+    font-size: 30px;
+    padding: 20px;
+}
+
+header button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font: large;
+}
+
+main{
+    display: block;
+}
+
+ #formulario2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background-color: #c8d6e5;
+    border: 5px solid #222f3e;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+select{
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+}
+
+input{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    font-size: large;
+    border-radius: 10px;
+}
+
+main  .listaTareas{
+
+    width: 100%;
+    height: 150px;
+    background-color: #00d2d3;
+    border: 5px solid black;
+    border-top: none;
+}
+
+main .tarea{
+    width: 100%;
+    height: auto;
+   
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+main .tarea p{
+    font-size: 30px;
+    text-align: left;
+    justify-content: center;
+    padding: 10px;
+}
+
+main .tarea button{
+  width: 150px;
+  border-radius: 5px;
+  font-size: large;
+ 
+
+}
+
+
