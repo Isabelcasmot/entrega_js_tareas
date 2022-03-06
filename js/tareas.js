@@ -45,6 +45,17 @@ function printTarea(pTarea) {
 
     const div = document.createElement('div');
 
+    if (pTarea.prioridad === 'diaria') {
+        div.style.backgroundColor = 'lightblue'
+
+    } else if (pTarea.prioridad === 'mensual') {
+        div.style.backgroundColor = 'lightgreen'
+
+    } else if (pTarea.prioridad === 'urgente') {
+        div.style.backgroundColor = "tomato"
+    }
+
+
     div.appendChild(pTitulo)
     div.appendChild(btnBorrar)
 
@@ -66,17 +77,9 @@ function saveTarea(event) {
 
     const divNuevaLista = printTarea(nuevaTarea);
     seccionTareas.appendChild(divNuevaLista)
+
 }
 
-// if (pTarea.prioridad === 'diario') {
-//     div.style.backgroundColor = 'lightblue'
-
-// } else if (pTarea.prioridad === 'mensual') {
-//     div.style.backgroundColor = 'lightgreen'
-
-// } else if (pTarea.prioridad === 'urgente') {
-//     div.style.backgroundColor = "tomato"
-// }
 
 
 
@@ -115,7 +118,7 @@ inputTexto.addEventListener('input', (event) => {
 
 
 
-//filtrar por campo de texto (el imput segundo) y ponerle los colores
+
 
 
 
