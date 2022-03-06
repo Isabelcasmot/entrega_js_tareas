@@ -1,6 +1,4 @@
-let listaTareas = new Array();
-
-listaTareas = [
+let listaTareas = [
     {
         'idTarea': 0,
         'titulo': 'Estudiar Javascript',
@@ -8,7 +6,7 @@ listaTareas = [
     },
     {
         'idTarea': 1,
-        'titulo': 'dormir',
+        'titulo': 'Dormir',
         'prioridad': 'diaria'
     },
     {

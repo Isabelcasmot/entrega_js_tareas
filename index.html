@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/modelo.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,18 +18,18 @@
                     <h1>Lista de Tareas</h1>
                 </div>
                 <form class="formulario" action="">
-                    <input type="text">
-                    <select>
-                        <option selected></option>
-                        <option value="1">Urgente</option>
-                        <option value="2">Diaria</option>
-                        <option value="3">Mensual</option>
+                    <input type="text" id="inputTarea">
+                    <select id="selector">
+                        <option selected>Despliega</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="diaria">Diaria</option>
+                        <option value="mensual">Mensual</option>
                     </select>
 
                 </form>
             </section>
 
-            <button>Enviar</button>
+            <button id="btnGuardar">Guardar</button>
 
         </header>
 
@@ -40,26 +39,28 @@
             <section id="formulario2">
                 <div>
                     <form action="">
-                        <input type="text">
+                        <input id="inputTexto" type="text">
                     </form>
                 </div>
 
                 <div>
-                    <select name="" id="">
-                        <option value="1">Urgente</option>
-                        <option value="2">Diaria</option>
-                        <option value="3">Mensual</option>
+                    <select name="" id="selectPrioridad">
+                        <option selected>Despliega</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="diaria">Diaria</option>
+                        <option value="mensual">Mensual</option>
                     </select>
                 </div>
             </section>
 
-            <section class="listaTareas">
+            <section class="seccionTareas">
 
-                <div class="tarea">
-                    <!--   <p> Estudiar</p>
+                <!--<div class="tarea">
+                      <p> Estudiar</p>
                     <button>Borrar</button>
-                -->
+                    
                 </div>
+            -->
 
 
 
@@ -69,7 +70,8 @@
     </div>
     </main>
 
-    <script src="./js/listaTareas.js"></script>
+    <script src="./js/modelo.js"></script>
+    <script src="./js/tareas.js"></script>
 </body>
 
 </html>
