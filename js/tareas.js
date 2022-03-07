@@ -15,12 +15,9 @@ function printTareas(pTareas, pSection) {
     pSection.innerHTML = '';
 
     for (let tarea of pTareas) {
-
         let divTarea = printTarea(tarea)
-
         pSection.appendChild(divTarea)
     }
-
 }
 
 
@@ -40,10 +37,9 @@ function printTarea(pTarea) {
 
     })
 
-
-
-
     const div = document.createElement('div');
+
+    //pintado por prioridad
 
     if (pTarea.prioridad === 'diaria') {
         div.style.backgroundColor = 'lightblue'
@@ -77,11 +73,10 @@ function saveTarea(event) {
 
     const divNuevaLista = printTarea(nuevaTarea);
     seccionTareas.appendChild(divNuevaLista)
-
 }
 
 
-
+//Borrar tareas
 
 function borrarElemento(pId, pTareas) {
     const nuevoArr = [];
@@ -91,8 +86,9 @@ function borrarElemento(pId, pTareas) {
         }
     }
     return nuevoArr;
-
 }
+
+//filtrado desplegable
 
 selectPrioridad.addEventListener('change', (event) => {
 
@@ -105,6 +101,7 @@ selectPrioridad.addEventListener('change', (event) => {
     printTareas(filtrados, seccionTareas)
 });
 
+//filtrado por texto
 inputTexto.addEventListener('input', (event) => {
 
     const arrFiltradoTexto = listaTareas.filter(tarea => {
@@ -112,7 +109,6 @@ inputTexto.addEventListener('input', (event) => {
     });
 
     printTareas(arrFiltradoTexto, seccionTareas);
-
 });
 
 

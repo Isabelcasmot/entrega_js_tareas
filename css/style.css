@@ -85,6 +85,7 @@ main  .seccionTareas div{
     height: auto;
     border-bottom: 2px solid black;
     display: flex;
+    justify-content: space-between;
 }
 
 .seccionTareas p{
